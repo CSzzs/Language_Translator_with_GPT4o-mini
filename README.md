@@ -4,7 +4,7 @@ A simple, elegant translation application powered by ChatGPT 4o-mini via the Lan
 
 ## Overview
 
-Translator.AI is a web-based application that provides translation services between multiple languages. Built with Streamlit for the frontend and leveraging OpenAI's GPT-4o-mini model through LangChain for translations, this app offers a user-friendly interface for quick and accurate translations.
+Translator_with_GPT40_mini is a web-based application that provides translation services between multiple languages. Built with Streamlit for the frontend and leveraging OpenAI's GPT-4o-mini model through LangChain for translations, this app offers a user-friendly interface for quick and accurate translations.
 
 ## Features
 
@@ -16,7 +16,7 @@ Translator.AI is a web-based application that provides translation services betw
 ## Project Structure
 
 ```
-translator-ai/
+translator_with_GPT4o_mini/
 ├── config.json        # Configuration file with API keys
 ├── main.py            # Streamlit application entry point
 ├── translator_utils.py # Utility functions for translation
@@ -83,7 +83,7 @@ The translation functionality is implemented using:
 
 ## Configuration
 
-The application requires an OpenAI API key to function. This key is stored in `config.json` and loaded by the application at runtime. For security reasons, do not commit your actual API key to the repository.
+The application requires an OpenAI API key to function. This key is stored in `config.json` and loaded by the application at runtime.
 
 Example `config.json`:
 ```json
@@ -92,12 +92,6 @@ Example `config.json`:
 }
 ```
 
-## Security Considerations
-
-- **IMPORTANT**: The current repository includes an API key in the config.json file. This is not recommended for production use. Before pushing to a public repository, make sure to:
-  - Remove the actual API key from config.json
-  - Add config.json to your .gitignore file
-  - Consider using environment variables instead
 
 ## Future Improvements
 
